@@ -7,7 +7,7 @@ import { NotFound } from "./components/NotFound/NotFound";
 
 function App() {
   const [Busqueda, setRoute] = useState('');
-  
+  //cogemos el valor del elemento
   const input = (event) => {
     setRoute(event.target.value)
   }
