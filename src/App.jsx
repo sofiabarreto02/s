@@ -4,6 +4,7 @@ import { useState } from "react";
 import { RutaB } from "./components/RutaB/RutaB";
 import { RutaC } from "./components/RutaC/RutaC";
 import { NotFound } from "./components/NotFound/NotFound";
+//importamos todas las rutas
 
 function App() {
   const [Busqueda, setRoute] = useState('');
@@ -20,8 +21,9 @@ function App() {
       <form className='frm-get-route'>
         <input value={Busqueda} onChange={input} type="text" placeholder='complete la ruta' />
         <NavLink to={Busqueda}  className='go-to-route' >Ir A La Ruta</NavLink>
+       
       </form>
-
+    
       <Routes>
         <Route path='/rutaA' element={<RutaA />} />
         <Route path='/rutaB' element={<RutaB />} />
